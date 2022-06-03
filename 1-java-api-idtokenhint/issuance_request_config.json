@@ -13,7 +13,7 @@
   },
   "issuance": {
     "type": "VerifiedCredentialExpert",
-    "manifest": "CREDENTIAL URL ...set at runtime...",
+    "manifest": "https://beta.eu.did.msidentity.com/v1.0/8f466d89-2352-420b-8f08-79a3331d31d0/verifiableCredential/contracts/Grecho",
     "pin": {
       "value": "123456",
       "length": 4

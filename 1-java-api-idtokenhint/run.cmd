@@ -1,7 +1,7 @@
 set AADVC_TenantId=8f466d89-2352-420b-8f08-79a3331d31d0
 set AADVC_ClientID=784b36f0-fa56-44f8-a712-282e55130ca9
 set AADVC_ClientSecret=i9P8Q~d2iwqYiZcSaZJLwSO8IqeEOQuxLfgRqaMG
-set AADVC_CertName=grecho
+set AADVC_CertName=Grecho
 set AADVC_CertLocation=%cd%\AppCreationScripts\aadappcert.crt
 set AADVC_CertKeyLocation=%cd%\AppCreationScripts\aadappcert.key
 set AADVC_ApiKey=i9P8Q~d2iwqYiZcSaZJLwSO8IqeEOQuxLfgRqaMG
@@ -15,6 +15,6 @@ for /f "delims=" %%a in ('powershell .\GetTenantRegionScope.ps1 -TenantId %AADVC
 if "%AADVC_TenantRegionScope%" == "EU" set hostNameRegion=eu.
 
 set AADVC_ApiEndpoint=https://beta.%hostNameRegion%did.msidentity.com/v1.0/{0}/verifiablecredentials/request
-set AADVC_CREDENTIALMANIFEST=https://beta.%hostNameRegion%did.msidentity.com/v1.0/%AADVC_TenantId%/verifiableCredential/contracts/Cljungdemob2cMembership
+set AADVC_CREDENTIALMANIFEST=https://beta.%hostNameRegion%did.msidentity.com/v1.0/%AADVC_TenantId%/verifiableCredential/contracts/Grecho
 
 java -jar .\target\java-aadvc-api-idtokenhint-0.0.1-SNAPSHOT.jar

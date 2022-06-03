@@ -235,10 +235,10 @@ public class IssuerController {
                 }
             }
             // here you could change the payload manifest and change the firstname and lastname
-            if ( rootNode.path("issuance").has("claims") ) {
+           /*  if ( rootNode.path("issuance").has("claims") ) {
                 ((ObjectNode)(rootNode.path("issuance").path("claims"))).put("firstName", "Megan" );
                 ((ObjectNode)(rootNode.path("issuance").path("claims"))).put("lastName", "Bowen" );
-            }
+            }*/
             // The VC Request API is an authenticated API. We need to clientid and secret to create an access token which
             // needs to be send as bearer to the VC Request API
             payload = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(rootNode);
